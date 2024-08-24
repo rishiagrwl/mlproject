@@ -35,7 +35,7 @@ class DataTransformation:
             numerical_pipeline = Pipeline(
                 steps=[
                    ("imputer", SimpleImputer(strategy="median")),
-                   ("scaler", StandardScaler(with_mean = False))
+                   ("scaler", StandardScaler())
                 ]
             )
             categorical_pipeline = Pipeline(
